@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+
+</head>
+<body>
+<div class="container">
+    <form>
+        <h1>Rejestracja</h1>
+
+        <div class="form-group">
+            <label for="name">Imie</label>
+            <input type="text" class="form-control" id="name" placeholder="Wpisz imie">
+        </div>
+
+        <div class="form-group">
+            <label for="forname">Nazwisko</label>
+            <input type="text" class="form-control" id="forname" placeholder="Wpisz nazwisko">
+        </div>
+
+        <div class="form-group">
+                <legend>Płeć</legend>
+                  <div class="custom-control custom-radio">
+                      <input class="custom-control-input" type="radio" name="gender" id="womanRadios" value="woman" checked>
+                        <label class="custom-control-label" for="womanRadios">
+                          Kobieta
+                         </label>
+                  </div>
+                 <div class="custom-control custom-radio">
+                       <input class="custom-control-input" type="radio" name="gender" id="manRadios" value="man">
+                      <label class="custom-control-label" for="manRadios">
+                          Mężczyzna
+                       </label>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Adres email</label>
+            <input type="email" class="form-control" id="email" placeholder="Wpisz adres email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password">
+            <small id="passwordHelp" class="form-text text-muted">Min. 8 znaków </small>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="city">Miasto</label>
+                <input type="text" class="form-control" id="city">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Województwo</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Wybierz</option>
+                    <option>Dolnośląskie</option>
+                    <option>Wielkopolskie</option>
+                    <option>Lubuskie</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="postalCode">Kod Pocztowy</label>
+                <input type="text" class="form-control" id="postalCode">
+            </div>
+        </div>
+
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="regulation">
+            <label class="custom-control-label" for="regulation">Akceptuję <a href="#">regulamin</a></label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="marketing" checked>
+            <label class="custom-control-label" for="marketing">Wyrażam zgodę na przetwarzanie informacji marketingowych</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Rejestruj</button>
+
+    </form>
+</div>
+
+</body>
+</html>
